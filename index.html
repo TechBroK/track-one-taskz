@@ -17,7 +17,7 @@
                     <a href="#project" class="nav">PROJECTS</a>
                     <a href="#about" class="nav">ABOUT</a>
                     <a href="#contact" class="nav">CONTACT ME</a>
-                    <time><input type="time"></time>
+                    <time id="current-time"><input type="time"></time>
                 </nav>
             </div>
             <div class="section page" id="home">
@@ -88,5 +88,20 @@
             </footer>
         </div>
     </div>
+
+
+<script>
+        function setCurrentTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const currentTime = `${hours}:${minutes}:${seconds}`;
+            
+            document.getElementById('current-time').textContent = currentTime;
+        }
+
+       setInterval(setCurrentTime, 1000);
+    </script>
 </body>
 </html>
