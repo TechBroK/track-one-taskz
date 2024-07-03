@@ -37,11 +37,18 @@ float:right;
     width: auto;
     margin-bottom:10px;
 }
+
+h3{
+align-text: center;
+}
+
 button{
 height:25px;
 width: auto;
 border: 1px solid brown;
 }
+
+
 button:hover{
 
 background-color: white;
