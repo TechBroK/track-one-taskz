@@ -2,3 +2,38 @@
     color: #fff;
     background-color: #000;
 }
+
+body{
+    margin:20px;
+    padding:20px;
+    position: relative;
+}
+
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+ 
+}
+
+.nav{
+    text-decoration: none;
+    font-size: 15px;
+    
+}
+
+.nav:hover{
+    background-color: white;
+    color:black;
+}
+
+.img1{
+float:right;
+}
+.page{
+    margin:4px;
+    padding:4px;
+    height: auto;
+    width: auto;
+    margin-bottom:10px;
+}

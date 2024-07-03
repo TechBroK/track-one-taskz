@@ -6,25 +6,27 @@
     <title>My Personal Website </title>
     <link rel="icon" type="image/png" sizes="32x32" href="../image/f9f2cbc1785701ceb73a2aa4ea32c626.jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
         <div class="content">
             <div> 
                 <nav>
-                    <a href="#home">HOME</a>
-                    <a href="#project">PROJECTS</a>
-                    <a href="#about">ABOUT</a>
-                    <a href="#contact">CONTACT ME</a>
+                    <a href="#home" class="nav">HOME</a>
+                    <a href="#project" class="nav">PROJECTS</a>
+                    <a href="#about" class="nav">ABOUT</a>
+                    <a href="#contact" class="nav">CONTACT ME</a>
+                    <time><input type="time"></time>
                 </nav>
             </div>
             <div class="section page" id="home">
                 <h3>I am  <h1 data-testid="slackDisplayName">ADEBAYO ADEKUNLE</h1> </h3>
                 <marquee behavior="scroll" direction="left">A Frontend Developer, Also a 300Level student studying COMPUTER SCIENCE at Lagos State University (LASU), An ambassador for Cowrywise, Nigeria. Crrently, I am interning @Binectics(MAIN) and @HNG11(adition)</marquee> 
-                <img src="./image/profile-pic.png">
+                <img class="img1" src="./image/profile-pic.png">
                 <p>I have been in the space of learning, applying my knowledge to develop solutions to real-life problems surrounding the use of responsive websites, webpages, and mobile-view, </p>
-               <section>
-                    <h1>My Goals for the Next TWO(2) Years</h1>
+               <div>
+                    <h1>My Goals for the Next TWO(2) Years (@2026) </h1>
                     <ul>
                         <li>Completion of my BSc in COMPUTER Science from Lagos State University</li>
                         <li>Master Advanced ReactJS Concepts</li>
@@ -32,11 +34,11 @@
                         <li>Attend Tech Conferences and Meetups</li>
                         <li>Get Certified by Google Developer Certifications and Other leading Company</li>
                     </ul>
-               </section>
+                </div>
             </div>
             
-            <div id="project">
-                <h2>my projects</h2>
+            <div id="project" class="ptoject">
+                <h2>My Projects</h2>
                 <p>Most of this projects where done for fun and studies</p>
                 <section>
                     <img src="./image/shopify login.png" alt="Shopify Login page cloned">
@@ -55,19 +57,35 @@
                     <h3>My profile QR-code</h3>
                     <p>this was my very first code project i did without assistances <a href="https://techbrok.github.io/QR-code-component/"><button>VIew and Scan</button></a> </p>
                 </section>
+                <hr>
                 <section>
                     <img src="./image/facts.png" alt="Nutition facts">
                     <h3>Nutition facts</h3>
                     <p>This helped me learn positioning <a href="https://techbrok.github.io/nutrition-label/"><button>Unveil Display</button></a></p>
                 </section>
+                <hr>
                 <section>
-                    
+                    <img src="./image/social link.png" alt="adekunle's social link">
+                    <h3>My Social Link</h3>
+                    <P>This web page houses all my profile link and you can <a href="https://techbrok.github.io/Social-Link/"><button>Know Me More</button></a> with a click.</P>
                 </section>
+                <hr>
                 <section>
-                    
+                    <img src="./image/davido fanpage.png" alt="davido fan page">
+                    <h3>Davido's fan page</h3>
+                    <p>This project is a multipaged project with various information about David as @2022 <a href="https://techbrok.github.io/Davido-fans/"><button>Visit Website</button></a></p>
                 </section>
-
             </div>
+            <div id="about">
+                <h3>Who is Adebayo Adekunle</h3>
+                <p>Adebayo Adekunle is a skilled front-end developer working at <a href=""> BINECTICS </a>, specializing in ReactJS. With a strong foundation in web development and a passion for creating seamless user experiences, Adebayo consistently stays updated with the latest technologies and industry trends. Over the next two years, he aims to expand his expertise by mastering advanced ReactJS concepts, learning backend development, and contributing to open-source projects. Adebayo is also committed to professional growth through leadership roles, building significant personal projects, and obtaining relevant certifications to further validate his skills and knowledge.</p>
+            </div>
+            <footer id="contact">
+                <a href="https://github.com/TechBroK"><i class="fa-brands fa-github fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/adekunle-adebayo-661866267/"><i class="fa-brands fa-linkedin fa-linkedin-square fa-2x"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                <a href="https://www.freecodecamp.org/TechBroK"><i class="fa-brands fa-free-code-camp fa-2x"></i></a>
+            </footer>
         </div>
     </div>
 </body>
