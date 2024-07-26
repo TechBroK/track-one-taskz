@@ -25,6 +25,12 @@ nav{
     color:black;
 }
 
+img{
+display: flex;
+justify-content:center;
+ align-items:center;
+}
+
 .img1{
 float:right;
 }
@@ -35,22 +41,4 @@ float:right;
     height: auto;
     width: auto;
     margin-bottom:10px;
-}
-
-button{
-    height: 30px;
-    width: auto;
-    font-family: sans-serif;
-    border:1px solid brown;
-}
-
-button:hover{
-    background-color: white;
-    color:black;
-}
-
-footer{
-    display: flex;
-    justify-content: space-around;
-    align-content: end;
 }

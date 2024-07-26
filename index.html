@@ -17,8 +17,7 @@
                     <a href="#project" class="nav">PROJECTS</a>
                     <a href="#about" class="nav">ABOUT</a>
                     <a href="#contact" class="nav">CONTACT ME</a>
-                    <time><input type="time"></time>
-                </nav>
+                    <div id="current-time"></div>         </nav>
             </div>
             <div class="section page" id="home">
                 <h3>I am  <h1 data-testid="slackDisplayName">ADEBAYO ADEKUNLE</h1> </h3>
@@ -32,61 +31,76 @@
                         <li>Master Advanced ReactJS Concepts</li>
                         <li>Learn Backend Development</li>
                         <li>Attend Tech Conferences and Meetups</li>
-                        <li>Get Certified by Google Developer Certifications and Other leading Company</li>
+                        <li>Get Certified by Google Developer Certifications and Other Leading Company</li>
                     </ul>
                 </div>
             </div>
             
-            <div id="project" class="ptoject">
+            <div id="project" class="project">
                 <h2>My Projects</h2>
-                <p>Most of this projects where done for fun and studies</p>
+                <p>Most of these projects were done for fun and studies</p>
                 <section>
-                    <img src="./image/shopify login.png" alt="Shopify Login page cloned">
-                    <h3>Shopify Login page </h3>
-                    <p>Click on this link to visit this page and experience it active state. <a href="https://techbrok.github.io/Shorpify-Log-in/"><button>View Page</button></a> </p>
+                    <img src="./image/Shopify login.png" alt="Shopify Login page cloned">
+                    <h2>Shopify Login page </h2>
+                    <p>Click on this link to visit this page and experience its active state. <a href="https://techbrok.github.io/Shorpify-Log-in/"><button>View Page</button></a> </p>
                 </section>
                 <hr>
                 <section>
                     <img src="./image/login page.png" alt="a simple sign-up page">
-                    <h3>A Simple Sign Up Page</h3>
-                    <p>Note, Tthis sign-up page also have a log-in page linked to it <a href="https://techbrok.github.io/LOG-IN2.0/"><button>Click me to view</button></a></p>
+                    <h2>A Simple Sign Up Page</h2>
+                    <p>Note, This sign-up page also has a log-in page linked to it <a href="https://techbrok.github.io/LOG-IN2.0/"><button>Click me to view</button></a></p>
                 </section>
                 <hr>
                 <section>
-                    <img src="./image/qrcode.png" alt="qr-code">
-                    <h3>My profile QR-code</h3>
-                    <p>this was my very first code project i did without assistances <a href="https://techbrok.github.io/QR-code-component/"><button>VIew and Scan</button></a> </p>
+                    <img src="./image/qrcode.png" alt="QR-code">
+                    <h2>My profile QR-code</h2>
+                    <p> This was the very first code project I did without assistance <a href="https://techbrok.github.io/QR-code-component/"><button>VIew and Scan</button></a> </p>
                 </section>
                 <hr>
                 <section>
-                    <img src="./image/facts.png" alt="Nutition facts">
-                    <h3>Nutition facts</h3>
+                    <img src="./image/facts.png" alt="Nutrition facts">
+                    <h2>Nutition facts</h2>
                     <p>This helped me learn positioning <a href="https://techbrok.github.io/nutrition-label/"><button>Unveil Display</button></a></p>
                 </section>
                 <hr>
                 <section>
                     <img src="./image/social link.png" alt="adekunle's social link">
-                    <h3>My Social Link</h3>
-                    <P>This web page houses all my profile link and you can <a href="https://techbrok.github.io/Social-Link/"><button>Know Me More</button></a> with a click.</P>
+                    <h2>My Social Link</h2>
+                    <P>This web page houses all my profile links and you can <a href="https://techbrok.github.io/Social-Link/"><button>Know Me More</button></a> with a click.</P>
                 </section>
                 <hr>
                 <section>
                     <img src="./image/davido fanpage.png" alt="davido fan page">
-                    <h3>Davido's fan page</h3>
-                    <p>This project is a multipaged project with various information about David as @2022 <a href="https://techbrok.github.io/Davido-fans/"><button>Visit Website</button></a></p>
+                    <h2>Davido's fan page</h2>
+                    <p>This project is a multipage project with various information about David as @2022 <a href="https://techbrok.github.io/Davido-fans/"><button>Visit Website</button></a></p>
                 </section>
             </div>
             <div id="about">
-                <h3>Who is Adebayo Adekunle</h3>
+                <h3>Who is Adebayo Adekunle¿?</h3>
                 <p>Adebayo Adekunle is a skilled front-end developer working at <a href=""> BINECTICS </a>, specializing in ReactJS. With a strong foundation in web development and a passion for creating seamless user experiences, Adebayo consistently stays updated with the latest technologies and industry trends. Over the next two years, he aims to expand his expertise by mastering advanced ReactJS concepts, learning backend development, and contributing to open-source projects. Adebayo is also committed to professional growth through leadership roles, building significant personal projects, and obtaining relevant certifications to further validate his skills and knowledge.</p>
             </div>
             <footer id="contact">
                 <a href="https://github.com/TechBroK"><i class="fa-brands fa-github fa-2x"></i></a>
                 <a href="https://www.linkedin.com/in/adekunle-adebayo-661866267/"><i class="fa-brands fa-linkedin fa-linkedin-square fa-2x"></i></a>
-                <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                <a href="https://Wa.me/2347040056265"><i class="fa-brands fa-WhatsApp fa-2x"></i></a>
                 <a href="https://www.freecodecamp.org/TechBroK"><i class="fa-brands fa-free-code-camp fa-2x"></i></a>
             </footer>
         </div>
     </div>
+
+
+<script>
+        function setCurrentTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const currentTime = `${hours}:${minutes}:${seconds}`;
+            
+            document.getElementById('current-time').textContent = currentTime;
+        }
+
+       setInterval(setCurrentTime, 1000);
+    </script>
 </body>
 </html>
