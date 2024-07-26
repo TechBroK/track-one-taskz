@@ -13,13 +13,11 @@ nav{
     display:flex;
     justify-content:space-around;
     align-items:center;
- 
 }
 
 .nav{
     text-decoration: none;
     font-size: 15px;
-    
 }
 
 .nav:hover{
@@ -30,10 +28,29 @@ nav{
 .img1{
 float:right;
 }
+
 .page{
     margin:4px;
     padding:4px;
     height: auto;
     width: auto;
     margin-bottom:10px;
+}
+
+button{
+    height: 30px;
+    width: auto;
+    font-family: sans-serif;
+    border:1px solid brown;
+}
+
+button:hover{
+    background-color: white;
+    color:black;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-content: end;
 }
