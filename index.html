@@ -10,32 +10,31 @@
 </head>
 <body>
     <div class="container">
-        <div class="content">
-            <div>
-                <nav>
+            <div class="navbar">
+                <nav class="nav-block">
                     <a href="#home" class="nav">HOME</a>
                     <a href="#project" class="nav">PROJECTS</a>
                     <a href="#about" class="nav">ABOUT</a>
                     <a href="#contact" class="nav">CONTACT ME</a>
-                    <div id="current-time"></div>         </nav>
+                    <div id="current-time" class="time"></div>
+                </nav>
             </div>
+
             <div class="section page" id="home">
-                <h3>I am  <h1 data-testid="slackDisplayName">ADEBAYO ADEKUNLE</h1> </h3>
-                <marquee behavior="scroll" direction="left">A Frontend Developer, Also a 300Level student studying COMPUTER SCIENCE at Lagos State University (LASU), An ambassador for Cowrywise, Nigeria. Crrently, I am interning @Binectics(MAIN) and @HNG11(adition)</marquee> 
-                <img class="img1" src="./image/profile-pic.png">
-                <p>I have been in the space of learning, applying my knowledge to develop solutions to real-life problems surrounding the use of responsive websites, webpages, and mobile-view, </p>
-               <div>
-                    <h1>My Goals for the Next TWO(2) Years (@2026) </h1>
-                    <ul>
-                        <li>Completion of my BSc in COMPUTER Science from Lagos State University</li>
-                        <li>Master Advanced ReactJS Concepts</li>
-                        <li>Learn Backend Development</li>
-                        <li>Attend Tech Conferences and Meetups</li>
-                        <li>Get Certified by Google Developer Certifications and Other Leading Company</li>
-                    </ul>
-                </div>
+                        <h3>I am <h1>ADEBAYO ADEKUNLE</h1></h3>
+                        <marquee behavior="scroll" direction="left" class="scroll">A Frontend Developer, Also a 400Level student studying COMPUTER SCIENCE at Lagos State University (LASU), An ambassador for Cowrywise, Nigeria. Crrently, I am interning @Binectics(MAIN) and @HNG11(adition)</marquee> 
+                        <img class="img1" src="./image/profile-pic.png">
+                        <p>I have been in the space of learning, applying my knowledge to develop solutions to real-life problems surrounding the use of responsive websites, webpages, and mobile-view, </p>
+                        <h1>My Goals for the Next TWO(2) Years (@2026) </h1>
+                        <ul>
+                            <li>Completion of my BSc in COMPUTER Science from Lagos State University</li>
+                            <li>Master Advanced ReactJS Concepts</li>
+                            <li>Learn Backend Development</li>
+                            <li>Attend Tech Conferences and Meetups</li>
+                            <li>Get Certified by Google Developer Certifications and Other Leading Company</li>
+                        </ul>
             </div>
-            
+
             <div id="project" class="project">
                 <h2>My Projects</h2>
                 <p>Most of these projects were done for fun and studies</p>
@@ -84,19 +83,15 @@
                 <a href="https://www.linkedin.com/in/adekunle-adebayo-661866267/"><i class="fa-brands fa-linkedin fa-linkedin-square fa-2x"></i></a>
                 <a href="https://Wa.me/2347040056265"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
                 <a href="https://www.freecodecamp.org/TechBroK"><i class="fa-brands fa-free-code-camp fa-2x"></i></a>
-            </footer>
-        </div>
     </div>
 
 
-<script>
-        function setCurrentTime() {
+<script>        function setCurrentTime() {
             const now = new Date();
             const hours = now.getHours().toString().padStart(2, '0');
             const minutes = now.getMinutes().toString().padStart(2, '0');
             const seconds = now.getSeconds().toString().padStart(2, '0');
             const currentTime = `${hours}:${minutes}:${seconds}`;
-            
             document.getElementById('current-time').textContent = currentTime;
         }
 

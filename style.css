@@ -3,12 +3,6 @@
     background-color: #000;
 }
 
-body{
-    margin:20px;
-    padding:20px;
-    position: relative;
-}
-
 nav{
     display:flex;
     justify-content:space-around;
@@ -17,22 +11,24 @@ nav{
 
 .nav{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
+    padding: 6px;
+    border: lime 2px solid;
+    border-radius: 9px;
+
 }
 
 .nav:hover{
-    background-color: white;
-    color:black;
-}
-
-img{
-display: flex;
-justify-content:center;
- align-items:center;
+    color: lime;
+    border:black 2px solid;
 }
 
 .img1{
-float:right;
+    padding: 2px;
+    margin: 30px;
+    float: left;
+    border-radius: 30%;
+    border: lime 6px solid;
 }
 
 .page{
@@ -41,4 +37,9 @@ float:right;
     height: auto;
     width: auto;
     margin-bottom:10px;
+}
+
+img{
+    height:400px;
+    width:400px;
 }
