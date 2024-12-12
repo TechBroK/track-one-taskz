@@ -25,10 +25,9 @@ nav{
 
 .img1{
     padding: 2px;
-    margin: 30px;
-    float: left;
+    float: right;
     border-radius: 30%;
-    border: lime 6px solid;
+    border: rgb(103, 255, 103) 6px solid;
 }
 
 .page{
@@ -37,6 +36,14 @@ nav{
     height: auto;
     width: auto;
     margin-bottom:10px;
+}
+
+.project{
+    margin-top: 300px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 img{
